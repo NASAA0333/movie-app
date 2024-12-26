@@ -1,8 +1,6 @@
-import Image from "next/image";
-
 export function Footer() {
   return (
-    <div className="w-[100%] h-[308px] bg-[#4338CA] flex justify-center items-center sm:">
+    <div className="w-[100%] h-[308px] bg-[#4338CA] flex justify-center items-center :h-[280px] text-white">
       <div className="w-[80%] h-[228px] sm:flex justify-between">
         <div className="w-[247px] h-[52px] ">
           <div className="">
@@ -14,22 +12,22 @@ export function Footer() {
           </h1>
         </div>
 
-        <div className="max-w-[335px] h-[148px] flex justify-between items-center sm:w-[335px] ">
+        <div className="max-w-[335px] h-[148px] flex justify-between  sm:w-[335px] ">
           <div className="">
             <h1 className="text-[14px] font-inter ">Contact information</h1>
-            <div className="">
-              <div className="">
-                <div className=""></div>
-                <div className="">
+            <div className="  mr-[40px] mt-[12px] w-[100%]">
+              <div className="flex items-center gap-[12px] mt-[15px]">
+                <img src="/Email.png" alt="" className="size-[16px]" />
+                <div className="gap-[10px]">
                   <h1 className="text-[14px] font-inter ">Email:</h1>
                   <h1 className="text-[14px] font-inter ">
                     support@movieZ.com
                   </h1>
                 </div>
               </div>
-              <div className="">
-                <div className=""></div>
-                <div className="">
+              <div className="flex items-center gap-[12px] mt-[15px]">
+                <img src="/Phone.png" alt="" className="size-[16px]" />
+                <div className="gap-[10px]">
                   <h1 className="text-[14px] font-inter ">Phone:</h1>
                   <h1 className="text-[14px] font-inter ">
                     +976 (11) 123-4567
@@ -38,9 +36,10 @@ export function Footer() {
               </div>
             </div>
           </div>
-          <div className="">
+
+          <div className="flex justify-start flex-col gap-[6px]">
             <h1 className="text-[14px] font-inter ">Follow us</h1>
-            <div className="sm:">
+            <div className="flex flex-col md:flex-row gap-[6px] ">
               <h1 className="text-[14px] font-inter ">Facebook</h1>
               <h1 className="text-[14px] font-inter ">Instagram</h1>
               <h1 className="text-[14px] font-inter ">Twitter</h1>
@@ -52,34 +51,3 @@ export function Footer() {
     </div>
   );
 }
-
-// width: Fill (375px)px;
-// height: Hug (308px)px;
-// padding: 40px var(--spacing5) 40px var(--spacing5);
-// gap: 48px;
-// opacity: 0px;
-
-// width: Fill (335px)px;
-// height: Hug (228px)px;
-// gap: var(--spacing7);
-// opacity: 0px;
-
-// width: Fill (335px)px;
-// height: Hug (228px)px;
-// gap: var(--spacing7);
-// opacity: 0px;
-
-// width: Fill (335px)px;
-// height: Hug (228px)px;
-// gap: var(--spacing7);
-// opacity: 0px;
-
-// width: Fill (335px)px;
-// height: Hug (228px)px;
-// gap: var(--spacing7);
-// opacity: 0px;
-
-// width: Fill (335px)px;
-// height: Hug (228px)px;
-// gap: var(--spacing7);
-// opacity: 0px;

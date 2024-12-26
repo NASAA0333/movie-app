@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { Movie } from "@/constants/types";
-// import StarIcon
 
 export const MovieCard = ({ movie }: { movie: Movie }) => {
   const imgPath = movie.poster_path ? movie?.poster_path : movie?.backdrop_path;
@@ -19,7 +17,6 @@ export const MovieCard = ({ movie }: { movie: Movie }) => {
             alt=""
             className="siz-[16px] stroke-yellow-300 fill-yellow-300 "
           />
-          {/* <StarIcon size={16} className="stroke-yellow-300 fill-yellow-300" /> */}
           <p className="text-black">{movie.vote_average.toFixed(1)}</p>
         </div>
         <p className="text-black">{movie.title}</p>
