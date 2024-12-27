@@ -1,6 +1,6 @@
 "use client";
 
-import { Movie } from "@/app/constants/types";
+import { Movie } from "@/constants/types";
 
 export const MovieCard = ({ movie }: { movie: Movie }) => {
   const imgPath = movie.poster_path ? movie?.poster_path : movie?.backdrop_path;
@@ -20,7 +20,7 @@ export const MovieCard = ({ movie }: { movie: Movie }) => {
           <p className="text-black">{movie.vote_average.toFixed(1)}</p>
         </div>
         <p className="text-black">{movie.title}</p>
-        <p className="text-black" >{movie.id}</p>
+        <p className="text-black">{movie.id}</p>
       </div>
     </div>
   );

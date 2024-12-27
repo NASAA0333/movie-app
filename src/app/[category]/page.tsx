@@ -1,6 +1,6 @@
-import { options } from "../components/Section";
-import { Movie } from "../constants/types";
-import { MovieCard } from "../components/MovieCard";
+import { Movie } from "@/constants/types";
+import { MovieCard } from "../_components/MovieCard";
+import { options } from "@/constants/api";
 
 export default async function Page({
   params,

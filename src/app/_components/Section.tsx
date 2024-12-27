@@ -1,21 +1,13 @@
 "use client";
 
-import { MovieCard } from "@/app/components/MovieCard";
-import { Movie } from "@/app/constants/types";
+import { MovieCard } from "@/app/_components/MovieCard";
+import { options } from "@/constants/api";
+import { Movie } from "@/constants/types";
 import Link from "next/link";
 
 type Props = {
   title: string;
   endpoint: string;
-};
-
-export const options = {
-  method: "GET",
-  headers: {
-    accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMzk2OTBmOTgzMGNlODA0Yjc4OTRhYzFkZWY0ZjdlOSIsIm5iZiI6MTczNDk0OTM3MS43NDIsInN1YiI6IjY3NjkzOWZiYzdmMTcyMDVkMTBiMGIxMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2r2TerxSJdZGmGVSLVDkk6nHT0NPqY4rOcxHtMNt0aE",
-  },
 };
 
 export const Section = async ({ title, endpoint }: Props) => {

@@ -1,8 +1,8 @@
 "use client";
 
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { Section } from "./components/Section";
+import { Footer } from "./_components/Footer";
+import { Header } from "./_components/Header";
+import { Section } from "./_components/Section";
 
 export default function Home() {
   return (
