@@ -32,7 +32,7 @@ export default async function Page({ params }: { params: { id: string } }) {
           </div>
         </div>
       </div>
-      <div>12345678git</div>
+  
       <div className="w-[100%] bg-green-300 h-[567px]"></div>
     </div>
   );
