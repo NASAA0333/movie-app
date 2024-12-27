@@ -29,10 +29,11 @@ export default async function Page({ params }: { params: { id: string } }) {
               <span className="text-gray-500">/10</span>
             </p>
             <p>{data.vote_count}</p>
+            <div>18273964591756987126357615298</div>
           </div>
         </div>
       </div>
-  
+
       <div className="w-[100%] bg-green-300 h-[567px]"></div>
     </div>
   );
