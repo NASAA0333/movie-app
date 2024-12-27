@@ -1,3 +1,5 @@
+"use client";
+
 import { Movie } from "@/constants/types";
 import { MovieCard } from "../_components/MovieCard";
 import { options } from "@/constants/api";
