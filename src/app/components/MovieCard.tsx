@@ -1,6 +1,6 @@
 "use client";
 
-import { Movie } from "@/constants/types";
+import { Movie } from "@/app/constants/types";
 
 export const MovieCard = ({ movie }: { movie: Movie }) => {
   const imgPath = movie.poster_path ? movie?.poster_path : movie?.backdrop_path;
