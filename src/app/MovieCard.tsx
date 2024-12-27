@@ -20,6 +20,7 @@ export const MovieCard = ({ movie }: { movie: Movie }) => {
           <p className="text-black">{movie.vote_average.toFixed(1)}</p>
         </div>
         <p className="text-black">{movie.title}</p>
+        <p className="text-black" >{movie.id}</p>
       </div>
     </div>
   );
