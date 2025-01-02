@@ -51,7 +51,7 @@ export default async function Page({ params }: { params: { id: number } }) {
             className="w-[148px] h-[100px] md:h-[300px] lg:h-[400px] xl:grid-[500px] 2xl:gird-[600px]"
           />
           <div className=" gap-[20px]">
-            <div className="rounded-2xl mr-3 mb-2 border-gray-300 ">
+            <div className="rounded-2xl mr-3 mb-2 border-gray-300  bg-slate-200">
               {data.id}
             </div>
             <p>{data.overview}</p>
