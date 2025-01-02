@@ -18,3 +18,8 @@ export type MovieDetail = {
 };
 
 export type PageInfo = {};
+
+export type genres = {
+  id: number;
+  name: string;
+};
