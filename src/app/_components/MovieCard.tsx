@@ -3,11 +3,18 @@
 import { Movie } from "@/constants/types";
 import Link from "next/link";
 
-export const MovieCard = ({ movie }: { movie: Movie }) => {
+export const MovieCard = ({
+  movie,
+  detailLink,
+}: {
+  movie: Movie;
+  detailLink?: string;
+}) => {
   const imgPath = movie.poster_path ? movie?.poster_path : movie?.backdrop_path;
   return (
-    <Link href={`movie/${movie.id}`}>
-      {" "}
+    <Link
+      href={detailLink && detailLink !== "" ? detailLink : `movie/${movie.id}`}
+    >
       <div className="rounded-lg bg-gray-100">
         <img
           src={`https://image.tmdb.org/t/p/w500${imgPath}`}

@@ -16,3 +16,5 @@ export type MovieDetail = {
   release_date: string;
   adult: boolean;
 };
+
+export type PageInfo = {};
