@@ -2,14 +2,8 @@
 
 import { MovieCard } from "@/app/_components/MovieCard";
 import { options } from "@/constants/api";
-import { Movie } from "@/constants/types";
+import { Movie, Props } from "@/constants/types";
 import Link from "next/link";
-
-type Props = {
-  title: string;
-  endpoint: string;
-  moreLink?: string;
-};
 
 export const Section = async ({ title, endpoint, moreLink }: Props) => {
   const response = await fetch(

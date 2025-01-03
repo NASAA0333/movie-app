@@ -19,7 +19,28 @@ export type MovieDetail = {
 
 export type PageInfo = {};
 
-export type genres = {
+export type Genre = {
   id: number;
   name: string;
+};
+
+export type Director = {
+  name: string;
+  job: string;
+};
+
+export type Writers = {
+  job: string;
+  name: string;
+  department: string;
+};
+
+export type Stars = {
+  name: string;
+};
+
+export type Props = {
+  title: string;
+  endpoint: string;
+  moreLink?: string;
 };
