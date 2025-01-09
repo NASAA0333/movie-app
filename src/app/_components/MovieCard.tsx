@@ -27,9 +27,9 @@ export const MovieCard = ({
               alt=""
               className="siz-[16px] stroke-yellow-300 fill-yellow-300 "
             />
-            <p className="text-black">{movie.vote_average.toFixed(1)}</p>
+            <p className="">{movie.vote_average.toFixed(1)}</p>
           </div>
-          <p className="text-black">{movie.title}</p>
+          <p className="text-text">{movie.title}</p>
         </div>
       </div>
     </Link>

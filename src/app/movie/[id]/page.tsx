@@ -23,8 +23,6 @@ export default async function Page({
 
   return (
     <div className="w-[100%] flex flex-col justify-center items-center">
-      <Header />
-
       <div className="w-[100%]  h-[60px] flex justify-between pl-[10px] pr-[10px] ">
         <div className="min-w-[211px] h-[56px] ">
           <p className="font-bold text-[24px]">{data.title}</p>
@@ -105,7 +103,6 @@ export default async function Page({
         endpoint={`movie/${(await params).id}/recommendations`}
         moreLink={`/movie/${(await params).id}/recommendations`}
       />
-      <Footer />
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import ThemeToggle from "./_components/Darkmode";
 import { Footer } from "./_components/Footer";
 import { Header } from "./_components/Header";
 import { Section } from "./_components/Section";
@@ -6,7 +7,6 @@ import { Section } from "./_components/Section";
 export default function Home() {
   return (
     <div className="">
-      <Header />
       <Section
         title="Popular"
         endpoint="movie/popular?language=en-US&page=1"

@@ -1,4 +1,5 @@
 export function Footer() {
+  console.log("footer");
   return (
     <div className="w-[100%] h-[308px] bg-[#4338CA] flex justify-center items-center :h-[280px] text-white">
       <div className="w-[80%] h-[228px] sm:flex justify-between">

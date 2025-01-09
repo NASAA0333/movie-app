@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from "react";
 import { SearchInput } from "./SearchInput";
 import { SearchResultList } from "./SearchResultList";
+import ThemeToggle from "./Darkmode";
 
 export const SearchForMainPage = () => {
   const [searchValue, setSearchValue] = useState<string>("");
