@@ -1,8 +1,7 @@
-"use client";
-
 import { Movie } from "@/constants/types";
 import { MovieCard } from "../_components/MovieCard";
 import { options } from "@/constants/api";
+import Header from "../_components/Header";
 
 // --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -20,6 +19,7 @@ export default async function ViewAllPage({
   const movies: Movie[] = resJson.results;
   return (
     <div className="gap-5 p-4 grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 xl:grid-cols-5 ">
+      <Header />
       {movies?.map((movie) => (
         <MovieCard movie={movie} />
       ))}

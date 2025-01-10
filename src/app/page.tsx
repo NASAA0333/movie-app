@@ -1,6 +1,3 @@
-import ThemeToggle from "./_components/Darkmode";
-import { Footer } from "./_components/Footer";
-import { Header } from "./_components/Header";
 import { Section } from "./_components/Section";
 // import { PaginationControls } from "./PaginationControls";
 
@@ -22,7 +19,6 @@ export default function Home() {
         endpoint="movie/top_rated?language=en-US&page=1"
         moreLink="/top_rated?language=en-US&page=1"
       />
-      <Footer />
       {/* <PaginationControls /> */}
     </div>
   );

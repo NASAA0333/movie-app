@@ -15,7 +15,7 @@ export const MovieCard = ({
     <Link
       href={detailLink && detailLink !== "" ? detailLink : `movie/${movie.id}`}
     >
-      <div className="rounded-lg bg-gray-100">
+      <div className="rounded-lg bg-gray-100 dark:text-black">
         <img
           src={`https://image.tmdb.org/t/p/w500${imgPath}`}
           className="rounded-tr-lg rounded-tl-lg"

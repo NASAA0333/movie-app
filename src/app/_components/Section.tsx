@@ -1,5 +1,3 @@
-"use client";
-
 import { MovieCard } from "@/app/_components/MovieCard";
 import { options } from "@/constants/api";
 import { Movie, Props } from "@/constants/types";

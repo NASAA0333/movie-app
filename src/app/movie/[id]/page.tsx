@@ -1,5 +1,5 @@
 import { Footer } from "@/app/_components/Footer";
-import { Header } from "@/app/_components/Header";
+
 import { Section } from "@/app/_components/Section";
 import { options } from "@/constants/api";
 import { Director, Genre, Stars, Writers } from "@/constants/types";

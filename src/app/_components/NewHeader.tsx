@@ -1,33 +1,7 @@
-"use client";
-
-import { Moon, Sun } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
-export default function Header() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    console.log({ theme });
-    if (theme === "dark") setDarkMode(true);
-  }, []);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [darkMode]);
-
-  const modeChange = () => {
-    setDarkMode(!darkMode);
-  };
-
-  console.log({ darkMode });
+export function NewHeader() {
+  console.log("NewHeader");
 
   return (
     <nav className=" w-[100%] h-[59px] flex justify-center items-center bg-white dark:bg-black">
@@ -35,7 +9,7 @@ export default function Header() {
         <Link href="/">
           <img src="/LogoPP.png" className="text-white h-[20px] w-[82px] " />
         </Link>
-        <div className="flex flex-row gap-2">
+        {/* <div className="flex flex-row gap-2">
           <div className="size-[36px]  flex justify-center items-center rounded-[9px] border-[1px] border-gray-400 ">
             <img
               src="/search.png"
@@ -54,7 +28,7 @@ export default function Header() {
             ></div>
             <Sun className="ml-auto text-yellow-400" size={18} />
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
